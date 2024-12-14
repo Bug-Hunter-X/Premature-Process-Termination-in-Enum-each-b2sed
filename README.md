@@ -1,0 +1,3 @@
+# Elixir Enum.each and Process Termination Bug
+
+This repository demonstrates a subtle bug related to using `Enum.each` in Elixir and terminating the process within the enumeration function. The code iterates over a list; however, upon reaching a specific value (3 in this case), it forcefully exits the process, preventing the rest of the list from being processed. This is an example of an uncommon error that can be tricky to debug. The solution showcases a safer way to handle similar scenarios.
